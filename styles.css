@@ -39,9 +39,23 @@ body{
   /* Add padding to the bottom to create a gap between the last and first card. */
   padding-bottom: 30px;
   will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
-  animation: scrolling 50s linear infinite;
 }
-@keyframes scrolling {
+.a {
+  animation: scrollinga 50s linear infinite;
+}
+
+.b {
+  animation: scrollingb 50s linear infinite;
+}
+@keyframes scrollinga {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes scrollingb {
   0% {
     transform: translateY(0);
   }
